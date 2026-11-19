@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf8fc;
+    color: #44364f;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #76558f;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #55465f;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a47ac4;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f3edf9, #faf8fc);
+}
+
+.subtitle {
+    color: #9978b1;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.2;
+    color: #493654;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    color: #81748a;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    background-color: #8e6ba9;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #6f4e88;
+    transform: translateY(-3px);
+}
+/* Destinations Section */
+.destinations {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: #9978b1;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.destinations h2 {
+    font-size: 34px;
+    color: #493654;
+    margin-bottom: 45px;
+}
+
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(80, 50, 100, 0.10);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(80, 50, 100, 0.16);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 22px;
+}
+
+.card-info h3 {
+    color: #594267;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    color: #887b91;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Mobile Design */
+@media (max-width: 650px) {
+    .destination-container {
+        grid-template-columns: 1fr;
+    }
+
+    .destinations h2 {
+        font-size: 27px;
+    }
+}
+/* Add to My List Button */
+.add-button {
+    margin-top: 18px;
+    padding: 11px 20px;
+    border: 1px solid #cbb5dc;
+    border-radius: 25px;
+    background-color: #f5eff9;
+    color: #76558f;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-button:hover {
+    background-color: #8e6ba9;
+    color: white;
+}
+/* My Travel List */
+.my-list {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #f3edf9;
+}
+
+.my-list h2 {
+    font-size: 34px;
+    color: #493654;
+    margin-bottom: 30px;
+}
+
+#travel-list {
+    list-style: none;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#travel-list li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    color: #594267;
+}
+#travel-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#travel-list button {
+    background-color: #f5eff9;
+    color: #8e6ba9;
+    border: 1px solid #cbb5dc;
+    padding: 7px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#travel-list button:hover {
+    background-color: #8e6ba9;
+    color: white;
+}
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .destination-container {
+        grid-template-columns: 1fr;
+    }
+}

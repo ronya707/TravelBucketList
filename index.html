@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="widht=device-width, initial-scale=1.0">
+        <title>Travel Bucket List</title>
+        <link rel="stylesheet"
+        href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                wanderlust</a>
+                <ul class="nav-links">
+                    <li><a href="#home">home</a></li>
+                    <li><a
+                    href="#destinations">Destinations</a></li>
+                    <li><a href="#my-list">My Travel 
+                        list</a></li>
+                </ul>
+        </nav>
+        <header class="hero" id="home">
+            <p class="subtitle">YOUR NEXT ADVENTURE STARTS HERE</p>
+            <h1>THE WORLD İS WAİTİNG<br>FOR YOU.</h1>
+        </h1>
+        <P class="hero-text">
+            Collect places,create memoris and dream beyond borders.
+        </P>
+        <a href="#destinations" class="hero-button">
+            Explore Destinations
+        </a>
+        </header>
+        <section class="destinations" id="destinations">
+
+    <p class="section-subtitle">EXPLORE THE WORLD</p>
+    <h2>Places I Dream of Visiting</h2>
+
+    <div class="destination-container">
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="Paris">
+            <div class="card-info">
+                <h3>Paris, France 🇫🇷</h3>
+                <p>The city of love, art and beautiful streets.</p>
+                <button class="add-button"
+                onclick="addToList('Paris')">
+            &#9825; Add to my List
+        </button>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600" alt="Kyoto">
+            <div class="card-info">
+                <h3>Kyoto, Japan 🇯🇵</h3>
+                <p>A peaceful city filled with culture and tradition.</p>
+                <button class="add-button"
+                onclick="addToList('kyoto')">
+            &#9825; Add to my List
+        </button>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=600" alt="Santorini">
+            <div class="card-info">
+                <h3>Santorini, Greece 🇬🇷</h3>
+                <p>White houses and beautiful sea views.</p>
+                <button class="add-button"
+                onclick="addToList('Santorini')">
+            &#9825; Add to My list
+        </button>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=600" alt="Rome">
+            <div class="card-info">
+                <h3>Rome, Italy 🇮🇹</h3>
+                <p>Discover history, architecture and Italian charm.</p>
+                <button class="add-button"
+                onclick="addToList('Rome')">
+            &#9825; add to My List
+        </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="my-list" id="my-list">
+    <p class="section-subtitle">MY DREAM JOURNEY</p>
+    <h2>My Travel List</h2>
+    <ul id="travel-list"></ul>
+</section>
+        <script src="js/script.js"></script>
+    </body>
+</html>
